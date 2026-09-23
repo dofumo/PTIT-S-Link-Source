@@ -1,8 +1,8 @@
 # PTIT S-Link — Phân tích luồng QR Check-in & Authentication
 
-> Tài liệu kỹ thuật mô tả kiến trúc client-side của app **PTIT S-Link** (React Native), tập trung vào luồng quét mã QR điểm danh sự kiện và cơ chế xác thực (SSO/OAuth2).
+> Kiến trúc client-side của app **PTIT S-Link** (React Native), tập trung vào luồng quét mã QR điểm danh sự kiện và cơ chế xác thực (SSO/OAuth2).
 >
-> Được tổng hợp từ việc phân tích `index_android.js` (reverse engineering). Chỉ sử dụng cho mục đích học tập và nghiên cứu — không chứa logic generate mã điểm danh hay bất kỳ nội dung nào hỗ trợ gian lận điểm danh.
+> Được tổng hợp từ việc phân tích `index_android.js` (reverse engineering). Chỉ sử dụng cho mục đích học tập và nghiên cứu — không chứa logic gen mã điểm danh hay bất kỳ nội dung nào hỗ trợ gian lận điểm danh.
 
 ---
 
@@ -63,6 +63,8 @@ Content-Type: application/json
 ```
 
 - Mình xác định được domain qua thực nghiệm: truy cập https://gwdu.ptit.edu.vn/slink/sv-su-kien/qr trực tiếp không kèm token → `401 Unauthorized`.
+- <img width="1366" height="735" alt="image" src="https://github.com/user-attachments/assets/44081fd1-53d2-4f61-b5ec-ce03b1597d88" />
+
 - `API_URL` không hard-code trong bundle, được inject qua biến môi trường lúc build.
 - Response xử lý theo 2 nhánh:
   - Có `surveyId` → điều hướng `KhaoSatFormScreen` (khảo sát sau sự kiện).
