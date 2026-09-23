@@ -2,7 +2,7 @@
 
 > Kiến trúc client-side của app **PTIT S-Link** (React Native), tập trung vào luồng quét mã QR điểm danh sự kiện và cơ chế xác thực (SSO/OAuth2).
 >
-> Được tổng hợp từ việc phân tích `index_android.js` (reverse engineering). Chỉ sử dụng cho mục đích học tập và nghiên cứu — không chứa logic gen mã điểm danh hay bất kỳ nội dung nào hỗ trợ gian lận điểm danh.
+> Được tổng hợp từ việc phân tích `index.android.js` (dịch ngược từ index.android.bundle của base.apk). Chỉ sử dụng cho mục đích học tập và nghiên cứu — không chứa logic gen mã điểm danh hay bất kỳ nội dung nào hỗ trợ gian lận điểm danh.
 
 ---
 
