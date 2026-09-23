@@ -2,7 +2,7 @@
 
 > Tài liệu kỹ thuật mô tả kiến trúc client-side của app **PTIT S-Link** (React Native), tập trung vào luồng quét mã QR điểm danh sự kiện và cơ chế xác thực (SSO/OAuth2).
 >
-> Được tổng hợp từ việc phân tích tĩnh bundle JS (`index_android.js`, Hermes bytecode dịch ngược). Chỉ mang tính chất tài liệu hóa kiến trúc — không chứa logic sinh mã phía server hay bất kỳ nội dung nào hỗ trợ gian lận điểm danh.
+> Được tổng hợp từ việc phân tích `index_android.js` (reverse engineering). Chỉ sử dụng cho mục đích học tập và nghiên cứu — không chứa logic generate mã điểm danh hay bất kỳ nội dung nào hỗ trợ gian lận điểm danh.
 
 ---
 
@@ -25,7 +25,7 @@ Mã QR điểm danh sự kiện có cấu trúc `PREFIX|module|action|data`:
 PTIT|SU_KIEN|CHECK_IN|{"maDiemDanh":"153591","idSuKien":"6aa161869d2ed9b3aa03bf5d"}
 ```
 
-| Phần | Ví dụ | Ý nghĩa |
+| Phần | VD | Ý nghĩa |
 |---|---|---|
 | `module` | `SU_KIEN` | Nhóm chức năng: Sự kiện |
 | `action` | `CHECK_IN` | Hành động điểm danh |
@@ -62,7 +62,7 @@ Content-Type: application/json
 }
 ```
 
-- Domain xác nhận qua thực nghiệm: truy cập trực tiếp không kèm token → `401 Unauthorized`.
+- Mình xác định được domain qua thực nghiệm: truy cập https://gwdu.ptit.edu.vn/slink/sv-su-kien/qr trực tiếp không kèm token → `401 Unauthorized`.
 - `API_URL` không hard-code trong bundle, được inject qua biến môi trường lúc build.
 - Response xử lý theo 2 nhánh:
   - Có `surveyId` → điều hướng `KhaoSatFormScreen` (khảo sát sau sự kiện).
