@@ -1,6 +1,6 @@
 # Phân tích kỹ thuật: Luồng QR Check-in & Cơ chế Auth trong app PTIT S-Link
 
-*Tài liệu tổng hợp từ việc phân tích file bundle `index_android.js` (React Native, Hermes bytecode dạng dịch ngược).*
+*Tài liệu tổng hợp từ việc phân tích file bundle `index_android.js` (RE từ index.android.bundle).*
 
 ---
 
