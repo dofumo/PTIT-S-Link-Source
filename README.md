@@ -130,7 +130,7 @@ API trả 401 / TokenInvalid
 ### 4.6 Tính chất của token
 
 - **Access token**: JWT ngắn hạn, **sinh mới mỗi lần login/refresh** — không cố định theo tài khoản.
-- **Refresh token**: sống lâu hơn nhưng **rotate** (thay mới) sau mỗi lần refresh:
+- **Refresh token**: thay mới sau mỗi lần refresh:
   ```js
   refreshToken = response.refreshToken ?? oldRefreshToken
   ```
