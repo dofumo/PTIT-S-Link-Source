@@ -161,7 +161,7 @@ POST /slink/sv-su-kien/qr  { ma, loaiQR }
 
 ## Giới hạn phạm vi
 
-Tài liệu chỉ mô tả **kiến trúc client-side**. Không bao gồm:
+Tài liệu không bao gồm:
 - Cách server sinh `maDiemDanh` hay chu kỳ/thuật toán sinh mã QR.
 - Bất kỳ hướng dẫn nào để gửi request điểm danh giả mạo hoặc dò/đoán mã điểm danh của người khác.
 
