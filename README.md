@@ -18,7 +18,7 @@
 ---
 
 ## 1. Định dạng mã QR
-<img width="424" height="463" alt="image" src="https://github.com/user-attachments/assets/f5b18524-7a65-4c5e-8248-9e73f683838f" />
+<img width="720" height="1280" alt="image" src="https://github.com/user-attachments/assets/bd102f03-8544-422b-a9eb-bfceeb8e86f2" />
 
 
 Mã QR điểm danh sự kiện có cấu trúc `PREFIX|module|action|data`:
