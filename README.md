@@ -1,6 +1,6 @@
-# Phân tích kỹ thuật: Luồng QR Check-in & Cơ chế Auth trong app PTIT S-Link
+# Luồng QR Check-in & Cơ chế Auth của PTIT S-Link
 
-*Tài liệu tổng hợp từ việc phân tích file bundle `index_android.js` (RE từ index.android.bundle).*
+* Phân tích từ file bundle `index_android.js` (RE từ index.android.bundle).*
 
 ---
 
@@ -12,10 +12,10 @@ PTIT|SU_KIEN|CHECK_IN|{"maDiemDanh":"153591","idSuKien":"6aa161869d2ed9b3aa03bf5
 
 Cấu trúc chung do `parseModularQR()` xử lý: `PREFIX|module|action|data`
 
-| Phần | Giá trị ví dụ | Ý nghĩa |
+
 |---|---|---|
-| module | `SU_KIEN` | Nhóm chức năng: Sự kiện |
-| action | `CHECK_IN` | Hành động: điểm danh check-in |
+| module | `SU_KIEN` | Sự kiện |
+| action | `CHECK_IN` | Điểm danh check-in |
 | data | JSON string | Chứa `maDiemDanh` (mã điểm danh) và `idSuKien` (id sự kiện) |
 
 ---
