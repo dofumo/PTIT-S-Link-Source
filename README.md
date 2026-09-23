@@ -1,4 +1,4 @@
-# PTIT S-Link — Phân tích luồng QR Check-in & Authentication
+# Luồng QR Check-in & Authentication của PTIT S-Link
 
 > Kiến trúc client-side của app **PTIT S-Link** (React Native), tập trung vào luồng quét mã QR điểm danh sự kiện và cơ chế xác thực (SSO/OAuth2).
 >
@@ -18,7 +18,8 @@
 ---
 
 ## 1. Định dạng mã QR
-<img width="720" height="1280" alt="image" src="https://github.com/user-attachments/assets/bd102f03-8544-422b-a9eb-bfceeb8e86f2" />
+<img width="328" height="345" alt="image" src="https://github.com/user-attachments/assets/50d0dacc-93ed-411e-89bd-10f596e23c9b" />
+
 
 
 Mã QR điểm danh sự kiện có cấu trúc `PREFIX|module|action|data`:
