@@ -63,7 +63,8 @@ Content-Type: application/json
 ```
 
 - Mình xác định được domain qua thực nghiệm: truy cập https://gwdu.ptit.edu.vn/slink/sv-su-kien/qr trực tiếp không kèm token → `401 Unauthorized`.
-- <img width="1366" height="735" alt="image" src="https://github.com/user-attachments/assets/44081fd1-53d2-4f61-b5ec-ce03b1597d88" />
+<img width="443" height="210" alt="image" src="https://github.com/user-attachments/assets/71a4e7c4-6d88-4bc3-9af7-2c27215e5842" />
+
 
 - `API_URL` không hard-code trong bundle, được inject qua biến môi trường lúc build.
 - Response xử lý theo 2 nhánh:
